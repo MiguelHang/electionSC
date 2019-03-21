@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity 0.4.25;
 
 contract Election {
      // Model a Candidate
@@ -22,6 +22,7 @@ contract Election {
     constructor () public {
         addCandidate("Acciona S.A");
         addCandidate("Acciona construcción");
+        addCandidate("Acciona Energia");
     }
     function vote (uint _candidateId) public {
         // require that they haven't voted before
